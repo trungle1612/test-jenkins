@@ -44,10 +44,13 @@ group :development, :test do
   gem "rspec-rails"
   gem 'ci_reporter'
   gem 'ci_reporter_rspec'
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
+  gem 'capistrano', require: false                                                                                                                                                     
+  gem 'capistrano-bundler', require: false                                                                                                                                             
+  gem 'capistrano-maintenance', require: false                                                                                                                                         
+  gem 'capistrano-passenger', require: false                                                                                                                                           
+  gem 'capistrano-rails', require: false                                                                                                                                               
+  gem 'capistrano-rails-console', require: false                                                                                                                                       
+  gem 'capistrano-rbenv', require: false                                                                                                                                               
 end
 
 group :development do
