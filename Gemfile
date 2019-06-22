@@ -41,8 +41,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "database_cleaner"
   gem "rspec-rails"
-  gem 'ci_reporter'
-  gem 'ci_reporter_rspec'
   gem 'capistrano', require: false                                                                                                                                                     
   gem 'capistrano-bundler', require: false                                                                                                                                             
   gem 'capistrano-maintenance', require: false                                                                                                                                         
