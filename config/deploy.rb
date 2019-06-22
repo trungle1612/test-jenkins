@@ -17,14 +17,14 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 
 namespace :deploy do    
-  desc 'Symlinks Secret.yml to the release path'
-  task :secret_symlink do
-    on roles(:app) do
-      execute "sudo ln -nfs #{shared_path}/secrets.yml #{release_path}/config/secrets.yml"
-   end
-  end
-
-  after  :updating,     :secret_symlink
+  # desc 'Symlinks Secret.yml to the release path'
+  # task :secret_symlink do
+  #   on roles(:app) do
+  #     execute "sudo ln -nfs #{shared_path}/secrets.yml #{release_path}/config/secrets.yml"
+  #  end
+  # end
+  #
+  # after  :updating,     :secret_symlink
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restart
