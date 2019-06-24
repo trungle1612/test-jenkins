@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "check-jenkins"
-set :repo_url, "git@gitlab.com:lexuantrung92/check-jenkins.git"
+set :repo_url, "git@github.com:trungle1612/test-jenkins.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
